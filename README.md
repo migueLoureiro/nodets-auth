@@ -1,14 +1,11 @@
-# typescript-getting-started
+# Basic Node Typescript Express Mongo Auth
 
-A barebones TypeScript app using [Express 4](http://expressjs.com/).
+Basic Backend app with basic auth.
+Using Node, Express, Typescript and Mongo.
 
 ## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
-
-```sh
-$ git clone https://github.com/heroku/typescript-getting-started.git # or clone your own fork
-$ cd typescript-getting-started
+```
 $ npm install
 $ npm run build
 $ npm start
@@ -23,13 +20,10 @@ $ heroku create
 $ git push heroku main
 $ heroku open
 ```
-or
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+## Implementation detail
 
-## Documentation
+Details about implementation here.
 
-For more information about using TypeScript on Heroku, see these Dev Center articles:
-
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+Bootstrap/Boilerplate:
+https://github.com/heroku/typescript-getting-started.git
