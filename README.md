@@ -1,8 +1,29 @@
-# NodeJS Starter Project
+# Basic Node Typescript Express Mongo Auth
 
-Project bootstrapped using [NodeJS Starter ToolKit](https://github.com/vitorsalgado/create-nodejs-ts).  
-Visit the repository for more details.
+Basic Backend app with basic auth.
+Using Node, Express, Typescript and Mongo.
 
-## Getting Started
+## Running Locally
 
-Review the generated code, and it's recommended to run a `npm init` to adjust basic project configurations before start.
+```
+$ npm install
+$ npm run build
+$ npm start
+```
+
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
+```
+$ heroku create
+$ git push heroku main
+$ heroku open
+```
+
+## Implementation detail
+
+Details about implementation here.
+
+Bootstrap/Boilerplate:
+https://github.com/heroku/typescript-getting-started.git
