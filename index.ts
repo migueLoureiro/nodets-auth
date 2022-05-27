@@ -1,12 +1,16 @@
-import express from 'express';
-import path from 'path';
 
-const PORT = process.env.PORT || 5000;
-const server = express();
+import express from "express";
 
-express()
-  .use(express.static(path.join(__dirname, '../public')))
-  .set('views', path.join(__dirname, '../views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${PORT}`));
+const app = express();
+const port = 8080; // default port to listen
+
+// define a route handler for the default home page
+app.get( "/", ( req, res ) => {
+    res.send( "Hello world!" );
+} );
+
+// start the Express server
+app.listen( port, () => {
+    // tslint:disable-next-line:no-console
+    console.log( `server started at http://localhost:${ port }` );
+} );
