@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 5000; // default port to listen
 
 // define a route handler for the default home page
-app.get( "/", ( req, res ) => {
+app.get( "/", (req:express.Request, res:express.Response) => {
     res.send( "Hello world!" );
 } );
 
