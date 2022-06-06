@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  app:
+    container_name: app
+    image: node:18
+
+    volumes:
+      - .:/usr/app/
+    working_dir: /usr/app/
+    command: make
+    
+    ports:
+      - "5000:5000"
+    tty: true
+    restart: on-failure
+    
